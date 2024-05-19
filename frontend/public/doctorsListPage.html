@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doctorsListPage.css" type="text/css">
+    <title>Doctors List</title>
+</head>
+<body>
+    <div class = "top-bar">
+        <a class="goto-main" href="/">HOSPITAL</a>
+        <a class="goto-Button" href="/doctors">Doctors</a>
+        <a class="goto-Button" href="/patients">Patients</a>
+    </div>
+
+    
+    <div class = "div-table">
+        <div class = "add-doctor-tab">
+            <button class="new-doctor-btn" id="new-doctor-btn">New doctor</button>
+            
+            <div hidden class="div-add-input" id="div-input">
+                <section>
+                    <label>First Name</label>
+                    <input type="text" id="input-firstName">
+
+                    <label>Last Name</label>
+                    <input type="text" id="input-lastName">
+                </section>
+
+                <section>
+                    <label>Proficiency</label>
+                    <input type="text" id="input-proficiency">
+
+                    <label>Hospital</label>
+                    <input type="text" id="input-hospital">
+                </section>
+
+                <button id="add-doctor-btn">Add doctor</button>
+                <button id="edit-doctor-btn">Edit doctor</button>
+                <a href=""></a>
+            </div>
+        </div>
+        <table id="table-doctor" data-id="1" class="table">
+            <thead>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Proficiency</th>
+                <th>Hospital</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+        <div id="page-div">
+            
+        </div>
+
+    </div>
+    <script src = "/doctorsListPage.js"></script>
+    <script src = "/dateFormatter.js"></script>
+</body>
+</html>

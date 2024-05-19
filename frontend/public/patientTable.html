@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/patientTable.css" type="text/css">
+    <title>Patients List</title>
+</head>
+<body>
+    <div class = "top-bar">
+        <a class="goto-main" href="/">HOSPITAL</a>
+        <a class="goto-Button" href="/doctors">Doctors</a>
+        <a class="goto-Button" href="/patients">Patients</a>
+    </div>
+
+    
+    <div class = "div-table">
+        <div class = "add-patient-tab">
+            <button class="new-patient-btn" id="new-patient-btn">New Patient</button>
+            
+            <div hidden class="div-add-input" id="div-input">
+                <section>
+                    <label>First Name</label>
+                    <input type="text" id="input-firstName">
+
+                    <label>Last Name</label>
+                    <input type="text" id="input-lastName">
+                </section>
+
+                <section>
+                    <label>Date of Birth</label>
+                    <input type="date" id="input-DoB">
+
+                    <label>Gender</label>
+                    <input type="text" id="input-gender">
+                </section>
+
+                <section>
+                    <label>Phone Number</label>
+                    <input type="text" id="input-phoneNumber">
+
+                    <label>Adress</label>
+                    <input type="text" id="input-adress">
+                </section>
+
+                <button id="add-patient-btn">Add Patient</button>
+                <button id="edit-patient-btn">Edit Patient</button>
+            </div>
+        </div>
+        <table id="table-patient" data-id="1" class="table">
+            <thead>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Phone Number</th>
+                <th>Adress</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+        <div id="page-div">
+            
+        </div>
+
+    </div>
+    <script src = "/patientsPage.js"></script>
+    <script src = "/dateFormatter.js"></script>
+</body>
+</html>

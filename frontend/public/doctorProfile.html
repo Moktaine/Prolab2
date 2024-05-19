@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doctorProfile.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "top-bar">
+        <a class="goto-main" href="https://localhost:5500/">HOSPITAL</a>
+        <a class="goto-Button" href="https://localhost:5500/doctors">Doctors</a>
+        <a class="goto-Button" href="https://localhost:5500/patients">Patients</a>
+    </div>
+
+    <div  class = "main" id="div-main">
+       
+
+        <strong>INFO</strong>
+        <button id="show-info-btn">Show Info</button>
+        <p id="doctor-info"></p>
+
+        <br>
+        <br>
+
+        <strong>PATIENTS</strong>
+        <button id="show-patients-btn">Show Patients</button>
+        
+        <div id="patient-table-div">
+
+            <table hidden id="table-patients" class="table">
+                <thead>
+                    <th>Patient ID</th>
+                    <th>Patient First Name</th>
+                    <th>Patient Last Name</th>
+                    <th>Patient Date of Birth</th>
+                    <th>Patient Gender</th>
+                    <th>Patient Phone Number</th>
+                    <th>Patient Adress</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <br>
+        <br>
+
+        <strong>APPOINTMENTS</strong>
+        
+        <button id="show-appointments-btn">Show Appointments</button>
+        
+        <div id="appointment-table-div">
+
+            <div hidden class = "add-appointment-tab" id="add-appointment-tab">
+                <button class="new-appointment-btn" id="new-appointment-btn">New appointment</button>
+
+                <div hidden class="div-add-input" id="div-input">
+                    <section>
+                        <label>Patient:</label>
+                        <select id="input-patient">
+
+                        </select>
+    
+                        <label>Doctor:</label>
+                        <select id="input-doctor">
+
+                        </select>
+
+                    </section>
+    
+                    <section>
+                        <label>Date:</label>
+                        <input type="date" id="input-date">
+    
+                        <label>Time:</label>
+                        <input type="time" id="input-time">
+                    </section>
+
+                    <button id="add-appointment-btn">Add appointment</button>
+                    <button id="edit-appointment-btn">Edit appointment</button>
+                </div>
+            </div>
+
+            <table hidden id="table-appointments" class="table">
+                <thead>
+                    <th>ID</th>
+                    <th>Patient</th>
+                    <th>Doctor</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <br>
+        <br>
+
+        <strong>MEDICAL REPORTS</strong>
+        <button id="show-reports-btn">Show Reports</button>
+        
+        <div id="reports-table-div">
+
+            <div hidden class = "add-reports-tab" id="add-reports-tab">
+                <section>
+
+                    <label>Patient:</label>
+                    <select id="input-report-patient">
+
+                    </select>
+
+                </section>
+                <button class="new-report-btn" id="new-report-btn">New Reports</button>
+
+                <div hidden class="div-add-input" id="div-report-input">
+                   
+                    <form>
+                        <div class="custom-file-input">
+                            <input id="fileInput" type="file" name="Files" />
+                            <label for="fileInput" id="fileInputLabel">Select Files</label>
+                        </div>
+                        <button id="btn-submit" type="submit">Add Report</button>
+                    </form>
+                </div>
+            </div>
+
+            <table hidden id="table-reports" class="table">
+                <thead>
+                    <th>ID</th>
+                    <th>Patient</th>
+                    <th>Doctor</th>
+                    <th>Date</th>
+                    <th>Report URL</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src = "/doctorProfile.js"></script>
+    <script src = "/dateFormatter.js"></script>
+</body>
+</html>

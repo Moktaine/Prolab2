@@ -1,0 +1,234 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .top-bar {
+    background-color: #0056b3;
+    z-index: 10000;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .goto-main {
+    display: inline-flex;
+    color: #ffffff;
+    padding-left: 12px;
+    margin: 4px 0px;
+    font-size: 200%;
+    text-shadow: 0px 5px 30px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+  }
+  
+  .goto-Button {
+    float: right;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .goto-Button:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 0;
+  }
+  
+  #show-info-btn, #show-appointments-btn, #show-patients-btn ,#show-reports-btn{
+    padding: 12px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  #show-info-btn:hover , #show-appointments-btn:hover, #show-patients-btn:hover,#show-reports-btn:hover{
+    background-color: #0056b3;
+  }
+  
+  #doctor-info , #appointment-table-div, #patient-table-div, #reports-table-div {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f7fd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  
+  
+  
+  table {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  
+  
+  
+  
+  .new-appointment-btn, .new-report-btn {
+    margin: 10px auto;
+    display: block;
+    cursor: pointer;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .new-appointment-btn:hover, .new-report-btn:hover {
+    background-color: #003e7f;
+  }
+  
+  .edit-row-btn,
+  .delete-row-btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-row-btn {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  .delete-row-btn {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .edit-row-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .delete-row-btn:hover {
+    background-color: #c82333;
+  }
+  
+  
+  
+  
+  .div-add-input {
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%; 
+  }
+  
+  .div-add-input section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .div-add-input label {
+    width: 120px;
+  }
+  
+  .div-add-input input {
+    margin-right: 20px;
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #add-appointment-btn,
+  #edit-appointment-btn {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #add-appointment-btn:hover,
+  #edit-appointment-btn:hover {
+    background-color: #003e7f;
+  }
+  
+
+  .goto-patientProfile {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .goto-patientProfile:hover {
+    background-color: #003e7f;
+  }
+
+
+  input[type="file"]{
+    display: none;
+  }
+  
+  #fileInputLabel {
+    display: block;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #fileInputLabel:hover {
+    background-color: #1976d2;
+  }
